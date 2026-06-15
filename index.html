@@ -6,194 +6,80 @@
     <title>Document</title>
     <style>
         *{
-            padding:0%;
+            border: 0;
             margin: 0%;
-            box-sizing:border-box;
+            box-sizing: border-box;
         }
-
-        .container {
-            height: 150vh;
-            width: 65vw;
-            margin: auto;
+        .left{
+            border: 1px solid red;
             display: grid;
-            grid-template-columns: 1fr 2fr;
-            box-shadow: rgba(0, 0, 0, 0.35) 1px 10px 15px;
+            grid-template-columns: 1fr 1fr;
+
         }
 
-        .left {
+        .right{
+            border: 1px solid blue;
             display: flex;
             flex-direction: column;
-            justify-content: Space-between;
-            padding: 10px;
-            background-color: rgb(151, 168, 175);
+            margin: auto;
+            gap: 30px;
+            width: 50vh;
         }
-        .right {
+        main{
+            
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            height: 90vh;
+        }
+        footer{
+            height: 10vh;
+        }
+        .logo{
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            padding: 10px;
-            background-color: rgb(220, 226, 239);
+            justify-content: space-between;
+            padding: 25px;
+
         }
 
-        .profile-img{
-            display: flex;
-            justify-content: center;
-        }
-
-        .profile-img img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid black;
-        }
-
-        ul{
-            padding-left: 20px;
-        }
-
-        .timesnewroman{
-            font-style: times new roman;
+        img{
+            width: 100px;
+            height: 100px;
         }
         h1{
-            text-align: center;
-            padding-bottom: 10px;
+            font-size: 74px;
+            width: 50%;
         }
-        h2{
-            text-align: left;
-            padding-top: 10px;
+        .image img{
+            width: 90vh;
+            height: 90vh;
+            border: 1px solid;
         }
-
-        a{
-            text-decoration: none;
-            padding-left: 25px;
+        .login{
+            display: flex;
         }
-
-        nav{
-            text-align: center;
-        }
-        h4{
-            padding-top: 10px;
-        }
-        a{
-            text-decoration: none;
-            padding-left: 25px;
-        }
-        
     </style>
 </head>
 <body>
-        <div class="container">
+    <main>
         <div class="left">
-            <div class="profile-img">
-                <img src="images/photo-fi.jpg" alt="Profile photo">
-            </div>
-            <h3>Contact</h3>
-            <hr>
-            <p>INDIA,CHENNAI</p>
-            <p>kumarvinoth11971@gmail.com</p>
-            <p>Contact No : 9342943477</p>
-
-            <h3>Technical Skills</h3>
-            <hr>
-            <ul>
-                <li>Java Full Statck</li>
-                <li>python</li>
-                <li>Excel</li>
-                <li>c,c++</li>
-            </ul>
-
-            <h3>STRENGTH</h3>
-            <hr>
-            <ul>
-                <li>Good Communication Skills</li>
-                <li>Focused and confident with positive attitude</li>
-                <li>Self learning and self motivated person</li>
-            </ul>
-
-            <h3>Language</h3>
-            <hr>
-            <ul>
-                <li>Tamil</li>
-                <li>English</li>
-            </ul>
-
-            <h3>SOFT SKILL</h3>
-            <hr>
-            <ul>
-                <li>Leadership</li>
-                <li>Adaptability</li>
-                <li>Time Management</li>
-            </ul>
+            <div class="logo">
+                <img src="images/OIP.jpg" alt="">
+            <h1>Explore the things you love.</h1>
         </div>
 
-        <div class="right">
-            <h1>VINOTH KUMAR</h1>
-            <nav>
-            <a href="http://">https://www.linkedin.com/in/vinoth-kumar-1a266b268/</a>
-            <a href="https">https://github.com/vinothkumar5733</a>
-            </nav>
-            <h2>CAREER OBJECTIVE</h2>
-            <hr>
-            <p>I'm a passionate and skilled final-year CSE (AI / ML) student with a strong foundation in programming, machine learning, deep
-learning, and big data technologies. Eager to apply technical expertise and problem- solving capabilities to build intelligent, datadriven
-solutions that address real-world challenges. Seeking an opportunity to contribute to innovative projects where I can bridge
-the gap between technology and business to drive impactful outcomes.</p>
-             <h2>EDUCATION</h2>
-             <hr>
-                <h5>B.Tech in Computer Science and Engineering (AI / ML)</h5>
-                <ul>
-                    <li>Kalasalingam Academy of Research and Education</li>
-                    <li>2022–2026</li>
-                    <li>CGPA: 7.2 / 10</li>
-                </ul>
-              <h5>Intermediate (12th)</h5>
-                <ul>
-                    <li>Shunmuga Sundara Nadar Higher Secondary School</li>
-                    <li>2021 - 2022</li>
-                    <li>Percentage : 80%</li>
-                </ul>
-            <hr>
-                <h4>Mech Connect:</h4>
-                <ul>
-                    <li>Designed and developed “Mech Connect,” a web/mobile app that enabled usersto locate nearby mechanics within a 5 km radius
-using real-time GPStracking.</li>
-                    <li>Improved emergency response time by 60%and connected over 500+users with verified mechanics during pilottesting</li>
-                    <li>Improved emergency response time by 60%and connected over 500+users with verified mechanics during pilottesting. Tech: React.js, Python, MongoDB</li>
-                </ul>
-                <h4>IEEE - Integrated Oil Level Indicator with Automatic Wiper System :</h4>
-                    <ul>
-                        <li>Designed and developed an Integrated Oil Level Indicator with Automatic Wiper System using sensors and micro-controllers
-to automate vehicle maintenance and safety features.</li>
-                        <li>Provided real-time oil level alerts for preventive maintenance and automatic wiper activation during rainfall, enhancing both
-efficiency and driversafety</li>
-                        <li>Tech: Matplotlib, MQTT, Python</li>
-                    </ul>
-            <h2>ACHIEVEMENTS</h2>
-            <hr>
-            <ul>
-                <li>Geek Fest, Google Developer Groups - Student Budget Companion: Web Interface with Authentication and Navigation. Tech: Bootstrap, Java, Streamlit</li>
-                <li>Task Ops - PSG College of Technology - Brainstormed and Developed a scalable student grading system for undergraduate students. Tech:Javascript, MongoDB, Node.js</li>
-            </ul>
-
-            <h2>TECHNICAL SKILLS</h2>
-            <hr>
-            <ul>
-                <li>Programming Languages: Java, Python, C, C++</li>
-                <li>Web Technologies: HTML, CSS, JavaScript, React.js</li>
-                <li>Database Management: MongoDB, SQL</li>
-                <li>Tools and Frameworks: Node.js, Bootstrap, Streamlit</li>
-            </ul>
-
-            <h2>CERTIFICATES</h2>
-            <hr>
-            <ul>
-                <li>JAVA PROGRAMMING</li>
-                <li>DATABASE MANAGEMENT SYSTEM</li>
-                <li>DAA</li>
-            </ul>
+        <div class="image">
+            <img src="images/fc.logo.webp" alt="">
         </div>
     </div>
-
+        <div class="right">
+          <p>Log in to Facebook</p>
+        <input type="text">
+        <input type="password">
+        <button>Log in</button>
+        <button>Forgotten Password</button>
+        <button>Create New Account</button>
+        </div>
+    </main>
 </body>
 </html>
