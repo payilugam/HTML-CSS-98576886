@@ -11,17 +11,37 @@
             box-sizing: border-box;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        
+        main{
+            border: 1px solid red;
+            height: 90vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
         body{
             background: black;
             color: white;
         }
+        h1{
+            font-size: 100px;
+            width: 50%;
+        }
+        button{
+            border-radius: 25px;
+            border: 1px solid red;
+            display: flex;
+            padding: 10px;
+        }
+        input{
+            border-radius: 25px;
+            display: flex;
+        }
+
     </style>
 </head>
 <body>
-    <div class="containor">
-        <div class="left">
-            <h1>Happening now</h1>
+    <main>
+            <div class="left">
+            <h1>Happening now.</h1>
             <button>Continue with phone</button>
             <button> kumarvinoth11971@gmail.com</button>
             <button>Continue With Apple</button>
@@ -29,7 +49,7 @@
             <input type="text" placeholder="E-mail or UserName">
             <button>Continue</button>
             <p>By continuing, you agree to our Terms of Service,Privacy Policy  and Cookie Use</p>
-        </div>
-    </div>
+            </div>
+    </main>
 </body>
 </html>
