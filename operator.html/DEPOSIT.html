@@ -9,7 +9,8 @@
     <script>
 
         let balance = 0;
-        function deposit(){
+        // let amount = 5000000;
+        function deposit(amount){
             balance= balance +  amount;
             
         }
@@ -20,10 +21,27 @@
             else{
                 console.log("Low Balance");
             }
-            function checkbalance(){
-                return balance;
-            }
         }
+        function checkBalance(){
+            return balance;
+        }
+        let result = checkBalance();
+        console.log(result);
+        deposit(500000);
+
+        // result = checkBalance;
+        // console.log(result);
+
+        withdraw(20000);
+
+        result = checkBalance();
+        console.log(result);
+
+        function greeting(name){
+            return "welcome"
+        }
+        
+        
         
 
     </script>
