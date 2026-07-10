@@ -8,14 +8,23 @@
 <body>
     <script>
 
-        let deposit = 0;
+        let balance = 0;
         function deposit(){
-            balance= balance - amount;
+            balance= balance +  amount;
             
         }
         function withdraw(amount){
-            
+            if(amount <= balance){
+                balance = balance - amount;
+            }
+            else{
+                console.log("Low Balance");
+            }
+            function checkbalance(){
+                return balance;
+            }
         }
+        
 
     </script>
 </body>
