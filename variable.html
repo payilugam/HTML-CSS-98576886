@@ -27,7 +27,24 @@
 
         // EX:02
 
-        
+        function gfgFnc() {
+            var localVariable2 = 10;
+            console.log(localVariable2);
+        }
+
+        function main() {
+            var localVariable1 = 5;
+            console.log(localVariable1);
+
+            gfgFnc();
+
+            if (true) {
+                var localVariable3 = 15;
+                console.log(localVariable3);
+            }
+        }
+
+        main();
     </script>
 </body>
 </html>
