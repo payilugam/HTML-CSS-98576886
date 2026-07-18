@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class GFG  {
+            static globalVariable = 5;
+
+            static gfgFnc() {
+                console.log(GFG.globalVariable);
+            }
+
+            static main() {
+                console.log(GFG.globalVariable);
+
+                GFG.gfgFnc();
+            }
+        }
+        GFG.main();
+    </script>
+</body>
+</html>
