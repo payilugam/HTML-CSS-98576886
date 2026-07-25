@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+        .head1{
+            height: 10vh;
+            width: 100vw;
+            background-color: rgb(20, 20, 238);
+            color: white; 
+            display: flex;
+            gap: 45px;
+
+
+        }
+        .side{
+            padding-left: 15%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 22%;
+        }
+        .search{
+            height: 7vh;
+            width: 30%;
+            border: 1px solid black;
+            margin: 10px;
+            border-radius: 10px;
+            font-size: larger;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+        .body{
+            border: 1px solid rgb(194, 190, 190);
+            width: 60vw;
+            height: 70vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 25%;
+            margin-top: 4%;
+        }.left{
+
+            background-color: rgb(40, 116, 240);
+            padding-top:12%;
+            padding-left: 7%;
+            color: white;
+        }
+
+        input{
+            margin: 10px;
+            margin-top: 15%;
+            font-size: large;
+            font-weight: bolder;
+        }
+        hr{
+            margin: 10px;
+            width: 96%;
+            margin-left: 10px;
+        }
+        button{
+            cursor: pointer;
+            margin-top: 5%;
+            width: 96%;
+            height: 10%;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .right{
+            padding-left: 4%;
+
+        }
+        .head2{
+            cursor: pointer;
+            height: 3vh;
+            width: 100vw;
+            font-style: initial;
+            display: flex;
+            justify-content: space-around;
+        }
+
+      .sp{
+        color: rgb(40, 116, 240);
+      }
+      button{
+    color: rgb(61, 59, 59);
+}
+
+button:hover{
+    color: red;
+}
+
+
+      .profile{
+        height: 50px;
+        width: 50px;
+        margin: 20px;
+      }
+    </style>
+</head>
+<body>
+    <header class="head1">
+        <div class="side">
+            <h1>Flipkart<br>
+            <h4>Explore <span style="color: gold;">Plus</span></h4>
+            </h1>
+        </div>
+          <input class="search" type="text" placeholder="Select for products,brands and more">
+          <button style="background-color: rgb(255, 255, 255);width: 10%;height: 7vh;margin: 10px;font-size: larger;font-weight:bolder;border-radius: 10px;">Login</button>
+          <h2 style="margin:20px"> Seller</h2>
+          <h2 href="" style="margin:20px">More</h2>
+          <h2 style="margin:20px">Cart</h2>
+          <img class="profile" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKMAAACUCAMAAADIzWmnAAAAZlBMVEUAAAD///91dXVdXV23t7f39/fQ0NDu7u7IyMj7+/vz8/Ojo6NpaWkVFRVEREQjIyPo6Oji4uIxMTGOjo6Hh4dWVlY8PDxjY2OVlZU2NjZRUVFvb2+urq7X19dJSUl+fn4NDQ0qKioxT+8iAAAEl0lEQVR4nO2ci5aiMAxAgeGhoAI+0RlH/P+fXJCd4wwUkjQpne56P0DvKaSkSVvP//14tgUQvBxleDnK8K84RnG2D0ywz+JIwDGJd55ZdnHCciyyg2HDlktW6Dtm2xkMW7aZpuPiOJNhy3Gh4bjMZjRsyZZUx2g1s6LnrcZifMQxeZtd0fPeRgJc7WhhFFtGRlLtaGMUW97wjnOHyxPlHKRyjNfWHNcxzjHdWFP0vE2KcrT3pFsUT3vomOZWHfPhQA4dK6uKnlfBjskcmc4Uh8FMPnBcWFb0vEF2MXA0ndLC7EBHuxHTcoccU9uGDf3I7jvafx2HL2Tf0e4E3tGfxvuOgW3BhgBwPNkWbDgBjpzM8XyqFmWSJuWiOp0Zv9PPIuUcg/D7KrkI9d8aU46XQVUkinV/y4zj9sNXEeo9cSOOh1Kp6PulVgiacFwpcue/pDoLTAOOt6n63PL2GxyP46P4GEn66kjccT32Ln5RkDMpcUd1RH8ntO14Ga12PaGuPqQdr7CiX9p1PCMUfZ8YNsKOIcqR+EbKOm6hoO4oaVVrWcd3THulSS/eLToOawpqaLUPWUd4cuz4sOdYTzQsfrAgVTRFHXPM7NhSkr6Hso64sLbr6MA4rrHvI63CbieuaR8aWcfJduk3aBUaWccAkZk1LGlrbVnHzXRz/Ivi06LjsC6shFgwFHZUN/j6EBew0nk45mFTa8PSjiuEIy0zk3dETOO0hMKAo7eBducktKA24Qg+beqTNlLvmU7GNZoAJupmu4mvjU6H1Ej9cT/2TqZanT0zddyRImmp92um6uHVcDIvdPtRxvoK5+pnUn6ttLermet9ePlnFRfLliKuPu/6P2TQ8UGd3/Oa+RumHSX47x23h1Vwu92C1YG1AdWY430fXsskjZqQidKkvIZ7bU8jjvdTpiryRdlJK7oNON4r1Ua2jmulMZry/ZkK6CFltW3HHZTitokF0VLW8YJcu17sOe5xZQrfX+4tOea4xkdHSKjuCTpii48dVwuOyFLPkwLd7ZJyPGLLzE/QnSQpR+oothSzOubjX5YpYlzgyDhia8x9cL0kEcd3TUVk0ULC8YjrZKqIMHEj4UiZu/tgOgwCjv3tiTQQ5XsBR51p5wliAuI76gdMBxw2bMea/oH5SVkbd7xh87Ex4B1oXMeaE9QdITSQXMcjdxgRcyTX8cZW9H3oYXMdaYmtGijd5ToKKDZ/atQR1x+EIP4J0RHbVJ8GKEIzHfkzTwuQWPAclUcU6QBbQHiOZ4mwbgJ7ulDFc9xwP9Yd5fQyluc4dkKaCHC6m+d4mq7jYUmnjwjwHEePw9MAjqDzHC+8HPyLYrrWx5wfsRvMpgH20jAdDyKOwKZ2yBE68BLwn3YBLQ2hM2fg0vKzCnlU4B4Q6OyeC2cgXThLGtkWbOhPwi6ebXbijLj9FxI+a+/CnQUu3P3gxB0aLtxF4sSdLi7cjePEHUNO3NXkxJ1XLtwd5sQdbP78gUO/y8534U7Ax1D++rsV/bnuqDxw7qj0H3d91kYFa+5dnx1Lg3emYto9Mo0Cs7wcZXg5yvBylOEPwj9JOsGGujYAAAAASUVORK5CYII=" >
+    </header>
+    <div class="head2"  style="color: rgb(41, 40, 40);padding: 5px;">
+     <h3>Electronics</h3>
+     <h3>Tv&Appliances</h3>
+     <h3>Men</h3>
+     <h3>Women</h3>
+     <h3>Baby&Kids</h3>
+     <h3>Woods&Furniture</h3>
+     <h3>Flights</h3>
+     <h3>Offerzone</h3>
+    </div>
+    <hr>
+    <div class="body">
+        <div class="left">
+          <h1 style="font-size:40px;font-weight: bolder;">Log in</h1>
+          <h3 style="padding: 15%;font-size: 20px;">Get access to your Orders, Wishlist and Recommendations</h3>
+          <img style="padding: 10% ;padding-left: 20%;"; src="flip.png" alt="Flipkart">
+
+        </div>
+        <div class="right">
+          <input style="height: 10%; width:96%";" type="text" placeholder="Enter Email/Mobile Number"><hr>
+          <p style="margin-top: 5%;margin-left: 1%;">By continuing, you agree to Flipkart's <span class="sp">Terms of Use</span > and <span class="sp">Privacy Policy</span>.</p>
+           <button style="background-color: rgb(255, 94, 0);margin-left: 2%;" >Request a OTP</button>
+        <div class="footer">
+            <h3 style="color: blue;margin-top:46%;margin-left: 25%;cursor: pointer;">New to Flipkart ? Create an account</h3>
+        </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

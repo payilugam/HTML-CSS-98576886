@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let gno=11;
+        let i=1;
+        let count = 0;
+        while(i<=gno){
+            if(gno%i==0){
+                console.log(i);
+                count++;
+
+        }
+        i++;
+    }
+    console.log("count :" + count);
+
+
+    // EX:02 
+
+    let gno2=11;
+    let n=1;
+    let count1 =0;
+    while(n<=gno2){
+        if(gno2%n==0){
+            count1++;
+        }
+        n++;
+    }
+    if(count1==2){
+        console.log("number is prime");
+    }else{
+        console.log("number is not prime");
+    }
+
+    // ex:03 for loop for count of divisor
+
+    let gno4=15;
+    let count3=0;
+    for(let j=1; j<=gno4;j++){
+        if(gno4%j==0){
+            count3++;
+            console.log(j);
+            
+        }
+    }
+    console.log("count:" + count3);
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let balance = 0;
+        // let amount = 5000000;
+        function deposit(amount){
+            balance= balance +  amount;
+            
+        }
+        function withdraw(amount){
+            if(amount <= balance){
+                balance = balance - amount;
+            }
+            else{
+                console.log("Low Balance");
+            }
+        }
+        function checkBalance(){
+            return balance;
+        }
+        let result = checkBalance();
+        console.log(result);
+        deposit(500000);
+
+        // result = checkBalance;
+        // console.log(result);
+
+        withdraw(20000);
+
+        result = checkBalance();
+        console.log(result);
+
+        function greeting(name){
+            return "welcome " +  name;
+        }
+
+        let res =  greeting("vinoth");
+        console.log(res);
+        
+        
+        
+
+    </script>
+</body>
+</html>

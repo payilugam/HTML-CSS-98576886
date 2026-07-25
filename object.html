@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // EX:01
+        function Mobile(){}
+        let mobile = new Mobile();
+        mobile.name = "Sourav";
+        mobile.age = 23;
+        mobile.job = "Developer";
+
+        console.log(mobile);
+
+        // EX:02
+
+        const mobile1 = {
+            brand : "iphone",
+            price : 100000,
+            storage : "1tb"
+        }
+        const mobile2 = {
+            brand : "samsung",
+            price : 80000,
+            storage : "1tb",
+        }
+        console.log(mobile1);
+        console.log(mobile2);
+
+        // EX:03
+
+        const mobile3 = {
+            brand : "vivo",
+            price : 20000,
+            storage : 258,
+        }
+        
+
+        // EX : 04
+
+        const Hp_01 = new Laptop(40000,"Hp","512 GB");
+        const Dell_d1  = new Laptop(45000,"Dell","256 GB");
+        const Asus_aa1 = new Laptop(50000,"Asus","1 TB");
+
+        function Laptop(price,brand,storage){
+            this.price = price;
+            this.brand = brand;
+            this.storage = storage;
+        }
+
+        console.log(Dell_d1);
+        delete(Dell_d1 . price);
+        console.log(Asus_aa1,Hp_01);
+        update : Asus_aa1.price = 75000;Hp_01.price = 60000;
+
+
+        // ex:05
+
+        let a = 10;
+        let b;
+
+        console.log(b);
+        
+        
+
+
+        a = 10
+        print(type(a))
+            
+        b = 'GeeksforGeeks'
+        print(type(b))
+
+        // EX;02
+
+         first_name = "Reddy"
+        last_name = "Anna"
+
+        print(first_name, last_name)
+
+        // ex: 03
+
+        name = input("Enter your name: ")
+        print("Hello,", name, "! Welcome!")
+
+        // ex:06
+
+        s = "Brad"
+        print(s)
+
+        s = "Anjelina"
+        age = 25
+        city = "New York"
+        print(s, age, city)
+    </script>
+</body>
+</html>

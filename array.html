@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+    const subjects = new Array(10, 20, 30);
+    console.log(subjects);
+
+    // EX:02
+
+    let total = 0;
+    const marks = [50,70,80,90,25];
+    for(let i =0; i < 5; i++){
+        total = total + marks[i];
+    }
+    console.log(total);
+
+
+    const marks1 = [70,90,99,35,75];
+    for(let i = 0; i < 5; i++){
+        let total1 =0;
+        total1 = total1 + marks1[i]
+        console.log(total1);
+        
+    }
+
+    const subject = [70,80,90,35,85];
+    let result = 'PASS';
+    for(let i = 0; i <= 5; i++){
+        if(subject[i] <= 35){
+            result = "FAIL";
+        }
+        console.log(result);
+        
+    }
+    </script>
+</body>
+</html>

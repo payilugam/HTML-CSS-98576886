@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // EX:01
+        class GFG  {
+            static globalVariable = 5;
+
+            static gfgFnc() {
+                console.log(GFG.globalVariable);
+            }
+
+            static main() {
+                console.log(GFG.globalVariable);
+
+                GFG.gfgFnc();
+            }
+        }
+        GFG.main();
+
+        // EX:02
+
+        function gfgFnc() {
+            var localVariable2 = 10;
+            console.log(localVariable2);
+        }
+
+        function main() {
+            var localVariable1 = 5;
+            console.log(localVariable1);
+
+            gfgFnc();
+
+            if (true) {
+                var localVariable3 = 15;
+                console.log(localVariable3);
+            }
+        }
+
+        main();
+    </script>
+</body>
+</html>
