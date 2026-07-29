@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>dynamic font size changer -</title>
 </head>
 <body>
-    
-    <input id="just-text" type="text">
-    
+    <input type="range" min = "10" max="50" value="17" oninput="changefont(this.value)">
+
+    <h1 id="text">hello myself vinoth</h1>
+
+    <script>
+
+        function changefont(size){
+            document.getElementById("text").style.fontSize = size + "px";
+
+        }
+    </script>
 </body>
 </html>
