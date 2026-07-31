@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style=" height: 100px; text-align: center;">
+        <h1 id="word">Hi Hello</h1>
+    </div>
+    <div style="text-align: center;">
+        <input type="range" min="10" max="48" value="22" id="size">
+    </div>
+
+    <script>
+        const word=document.getElementById('word');
+        const size=document.getElementById('size');
+        size.addEventListener('input',()=>{ word.style.fontSize=size.value+'px';});
+    </script>
+</body>
+</html>
