@@ -6,4 +6,7 @@ while count <= 10:
 # EX:02
 
 count = 1
-while count <= 
+while count <= 5:
+    print(1, end=" ")
+    
+    
